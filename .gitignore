@@ -36,3 +36,6 @@ Makefile.in
 /ltmain.sh
 /missing
 /m4
+
+# dependencies folder
+dependencies/

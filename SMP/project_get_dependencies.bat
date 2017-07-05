@@ -3,11 +3,14 @@ SETLOCAL EnableDelayedExpansion
 
 SET UPSTREAMURL=https://github.com/ShiftMediaProject
 SET DEPENDENCIES=( ^
+libiconv, ^
+zlib, ^
+liblzma, ^
+libxml2, ^
 freetype2, ^
 fontconfig, ^
 fribidi, ^
-harfbuzz, ^
-libiconv ^
+harfbuzz ^
 )
 
 REM Get passed in list of dependencies to skip
@@ -29,7 +32,9 @@ cd %~dp0
 REM Initialise error check value
 SET ERROR=0
 
-cd ..\..
+set DEPDIR=dependencies\
+IF not exist %DEPDIR%\ (mkdir %DEPDIR%)
+cd %DEPDIR%\
 FOR %%I IN %DEPENDENCIES% DO (
     ECHO !PASSDEPENDENCIES! | FINDSTR /C:"%%I" >NUL 2>&1 || (
         REM Check if MSVC_VER environment variable is set
@@ -70,8 +75,9 @@ IF EXIST "%REPONAME%" (
     ECHO %REPONAME%: Existing folder not found. Cloning repository...
     REM Clone from the origin repo
     SET REPOURL=%UPSTREAMURL%/%REPONAME%.git
-    git clone !REPOURL! --quiet
-    IF %ERRORLEVEL% NEQ 0 (
+    REM git clone !REPOURL! --quiet
+	git clone !REPOURL!
+    IF %ERRORLEVEL% NEQ 0 IF %ERRORLEVEL% NEQ 1 (
         ECHO %REPONAME%: Git clone failed.
         GOTO exitOnError
     )
