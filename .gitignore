@@ -39,3 +39,7 @@ Makefile.in
 
 # dependencies folder
 dependencies/
+
+# output folder
+msvc/
+

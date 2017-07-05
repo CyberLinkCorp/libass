@@ -13,34 +13,34 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libass", "libass.vcxproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{AC1F4DAA-E9C2-4E62-AF0D-682A84D6DF40}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfreetype2", "..\..\freetype2\SMP\libfreetype2.vcxproj", "{E62DC439-DE3B-4F2F-84DF-B34E51FA1969}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfreetype2", ".\dependencies\freetype2\SMP\libfreetype2.vcxproj", "{E62DC439-DE3B-4F2F-84DF-B34E51FA1969}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfontconfig", "..\..\fontconfig\SMP\libfontconfig.vcxproj", "{DBF1E8F7-5B7D-4CBF-842A-B7E0C02520DC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfontconfig", ".\dependencies\fontconfig\SMP\libfontconfig.vcxproj", "{DBF1E8F7-5B7D-4CBF-842A-B7E0C02520DC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E62DC439-DE3B-4F2F-84DF-B34E51FA1969} = {E62DC439-DE3B-4F2F-84DF-B34E51FA1969}
 		{CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B} = {CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B}
 		{CFE70273-7A79-4815-AF95-1E02E2675E37} = {CFE70273-7A79-4815-AF95-1E02E2675E37}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfribidi", "..\..\fribidi\SMP\libfribidi.vcxproj", "{08091723-A142-478B-A092-20741BA8FAE2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfribidi", ".\dependencies\fribidi\SMP\libfribidi.vcxproj", "{08091723-A142-478B-A092-20741BA8FAE2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libharfbuzz", "..\..\harfbuzz\SMP\libharfbuzz.vcxproj", "{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libharfbuzz", ".\dependencies\harfbuzz\SMP\libharfbuzz.vcxproj", "{9DB795B7-E8BD-4846-82A5-C6D2577B1AAF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E62DC439-DE3B-4F2F-84DF-B34E51FA1969} = {E62DC439-DE3B-4F2F-84DF-B34E51FA1969}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "..\..\libiconv\SMP\libiconv.vcxproj", "{CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", ".\dependencies\libiconv\SMP\libiconv.vcxproj", "{CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libxml2", "..\..\libxml2\SMP\libxml2.vcxproj", "{CFE70273-7A79-4815-AF95-1E02E2675E37}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libxml2", ".\dependencies\libxml2\SMP\libxml2.vcxproj", "{CFE70273-7A79-4815-AF95-1E02E2675E37}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CA9A4A38-CC63-4BDB-8CFB-E058965DDA32} = {CA9A4A38-CC63-4BDB-8CFB-E058965DDA32}
 		{85763F39-23DF-4C04-B7DF-7FBE3E7CF336} = {85763F39-23DF-4C04-B7DF-7FBE3E7CF336}
 		{CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B} = {CB8BB76F-D3FF-434E-A85E-7FFC0893EC9B}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblzma", "..\..\liblzma\SMP\liblzma.vcxproj", "{85763F39-23DF-4C04-B7DF-7FBE3E7CF336}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liblzma", ".\dependencies\liblzma\SMP\liblzma.vcxproj", "{85763F39-23DF-4C04-B7DF-7FBE3E7CF336}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzlib", "..\..\zlib\SMP\libzlib.vcxproj", "{CA9A4A38-CC63-4BDB-8CFB-E058965DDA32}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzlib", ".\dependencies\zlib\SMP\libzlib.vcxproj", "{CA9A4A38-CC63-4BDB-8CFB-E058965DDA32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
