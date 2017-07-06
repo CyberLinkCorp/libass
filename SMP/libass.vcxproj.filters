@@ -90,6 +90,7 @@
     <ClInclude Include="..\libass\ass_directwrite.h">
       <Filter>Header Files\libass</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libass\ass_fontconfig.c">
@@ -177,5 +178,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libass.rc" />
   </ItemGroup>
 </Project>

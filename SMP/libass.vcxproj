@@ -81,6 +81,7 @@
     <ClInclude Include="..\libass\dwrite_c.h" />
     <ClInclude Include="..\libass\x86\cpuid.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libass\ass.c" />
@@ -118,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libass.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{19677DFD-C020-434D-9CB1-D0F105E72770}</ProjectGuid>
